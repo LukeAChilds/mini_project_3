@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content%}
+<h1>Enter Product Data</h1>
+
+
+<button onclick="window.location.href='/';">Back to Home</button>
+
+<form action = "/postform" method="post">
+    Categorical Name: <input name="name" type="text" id="catname"><br>
+    Product Description: <input name="description" type="text" id="descrip"><br>
+    Market Price: $<input name="price" type="number" id="price"><br>
+    Product Code: <input name="code" type="text" id="code"><br>
+    <input type="submit"><br>
+</form>
+
+{% endblock content %}

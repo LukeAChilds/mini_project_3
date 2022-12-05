@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content%}
+<h1>Viewing Product Data</h1>
+<br>
+View By Category:
+<form action = "/data" method="post">
+    <select name="category",id='category'>
+        <option value="none">None</option>
+        <option value="viewname">Name</option>
+        <option value="viewdescription">Description</option>
+        <option value="viewprice">Price</option>
+        <option value="viewcode">Code</option>
+    </select>
+    <input type="submit"><br>
+</form>
+
+{{data.to_html(classes="table table-striped") | safe}}
+<br>
+<button onclick="window.location.href='/';">Ok</button>
+{% endblock content %}
