@@ -49,5 +49,5 @@ def data():
         else:
             df = pd.read_sql("SELECT * FROM product",con)
         return render_template('data.html',title='Data',data=df)
-
-app.run(debug=True,port=8080)
+if __name__=="__main__":
+    app.run(debug=True,port= 5000)
