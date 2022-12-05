@@ -1,6 +1,8 @@
 from flask import Flask ,render_template, request
 import sqlite3
 import pandas as pd
+#App DNS is https://myapp.luke1234.dynv6.net/
+
 
 app = Flask(__name__)
 
